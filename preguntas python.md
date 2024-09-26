@@ -91,8 +91,6 @@
    all_objects = MyModel.objects.all()
    ```
 
-   Certainly! Here are the questions with answers, code examples, and testing scenarios for Python and Django:
-
 ### Python Questions with Answers and Code Examples:
 
 1. **Difference between Python 2 and Python 3:**
@@ -248,8 +246,6 @@
 18. **What are Django signals, and how are they used?**
     - Answer: Django signals allow decoupled applications to get notified when certain actions occur elsewhere in the application
 
-Certainly! Let's continue with the answers, code examples, and testing scenarios for the remaining Python and Django questions:
-
 ### Python Questions with Answers and Code Examples (continued):
 
 11. **Global Interpreter Lock (GIL) in Python:**
@@ -341,7 +337,6 @@ Certainly! Let's continue with the answers, code examples, and testing scenarios
     - Code Example: Conditional execution within a Python module based on the `__name__` variable.
     - Testing: Running a Python script should execute the code within the `__main__` block when the script is run directly.
 
-These answers, code examples, and testing scenarios cover various fundamental aspects of Python programming. Let's continue with Django-related questions next.
 
 ### Django Questions with Answers and Code Examples (continued):
 
@@ -574,8 +569,6 @@ These answers, code examples, and testing scenarios cover various fundamental as
 
 10. Q: Explain Elastic Load Balancer (ELB) in AWS.
    A: The Elastic Load Balancer is a service provided by Amazon Web Services (AWS) that distributes incoming traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses, in multiple Availability Zones. It ensures the continuous availability and scalability of applications.
-
-Apologies for the oversight. Here are some advanced questions for the remaining topics:
 
 **Django:**
 
@@ -812,8 +805,6 @@ Apologies for the oversight. Here are some advanced questions for the remaining 
    A: SonarQube calculates technical debt based on the effort it would take to fix the issues (code smells, duplications, etc.) in the code. It provides the 'Technical Debt Ratio', and if the ratio is above a certain percentage, the quality gate fails, indicating that the technical debt needs to be reduced. 
 
 
-Sure, I'll provide a few coding-related technical questions for each of the requested topics.
-
 **Python:**
 
 1. Q: How would you swap the values of two variables in Python?
@@ -925,8 +916,6 @@ Sure, I'll provide a few coding-related technical questions for each of the requ
     ```bash
     git checkout -b new_branch
     ```
-
-These are some general coding questions related to these topics. You can modify them to suit your requirements or to make them more complex. Let me know if you need more!
 
 **Celery:**
 
@@ -1891,8 +1880,6 @@ It is important to note that `multiprocessing.Pool` and threading, async, queue 
 
    A: If you're not careful where you create a Pool, you might end up creating new pools recursively when each new worker process starts. This is why it's common to see a Pool being created inside an `if __name__ == "__main__":` block.
 
-   Certainly! Here's a simulated technical interview for a SQL developer with over 6 years of experience, including a variety of questions ranging from low to high level, with a focus on security in queries:
-
 1. **What is SQL injection, and how can it be prevented?**
    
    SQL injection is a malicious technique that exploits vulnerabilities in SQL statements. It allows an attacker to interfere with the queries that an application makes to its database. To prevent SQL injection, developers should use parameterized queries (prepared statements) and input validation to sanitize user input.
@@ -2152,7 +2139,6 @@ It is important to note that `multiprocessing.Pool` and threading, async, queue 
 
 47. **What are some limitations of using web application firewalls (WAFs) for SQL injection
 
-Certainly! Let's delve into some SQL statements, including the `HAVING` clause and others. I'll provide explanations, examples, and the context in which each is used.
 
 ### HAVING Clause
 The `HAVING` clause is used to filter records that work on grouped data, similar to the `WHERE` clause but for aggregate functions. It's typically used in conjunction with the `GROUP BY` clause.
@@ -2420,42 +2406,6 @@ Aquí tienes un conjunto de preguntas y respuestas para una entrevista de trabaj
 
 ---
 
-### **Java**
-#### Preguntas:
-1. **¿Qué son los modificadores de acceso en Java?**
-   - **Respuesta**: Los modificadores de acceso controlan la visibilidad de las variables y métodos. Los principales son `public`, `protected`, `private`, y el modificador por defecto.
-
-   ```java
-   public class Ejemplo {
-       private int numero;
-   }
-   ```
-
-2. **Explica la diferencia entre `List`, `Set`, y `Map` en Java.**
-   - **Respuesta**: `List` permite elementos duplicados y tiene un orden, `Set` no permite duplicados y no tiene un orden garantizado, mientras que `Map` almacena pares clave-valor.
-
-   ```java
-   List<Integer> lista = new ArrayList<>();
-   Set<Integer> conjunto = new HashSet<>();
-   Map<Integer, String> mapa = new HashMap<>();
-   ```
-
-3. **¿Qué es el recolector de basura en Java y cómo funciona?**
-   - **Respuesta**: El recolector de basura (Garbage Collector) libera memoria automáticamente al eliminar objetos que ya no tienen referencias activas.
-
-4. **¿Cuál es la diferencia entre `==` y `.equals()` en Java?**
-   - **Respuesta**: `==` compara referencias de objetos, mientras que `.equals()` compara el contenido.
-
-   ```java
-   String a = new String("Hola");
-   String b = new String("Hola");
-
-   System.out.println(a == b);       // false, diferentes referencias
-   System.out.println(a.equals(b));  // true, mismo contenido
-   ```
-
-5. **¿Cómo se implementa la sobrecarga de métodos en Java?**
-   - **Respuesta**: La sobrecarga de métodos se da cuando se define más de un método con el mismo nombre pero con diferentes parámetros.
 
    ```java
    public class Ejemplo {
@@ -2468,65 +2418,6 @@ Aquí tienes un conjunto de preguntas y respuestas para una entrevista de trabaj
        }
    }
    ```
-
-#### Ejemplos de código:
-1. **Uso de `ArrayList` y `LinkedList`:**
-
-   ```java
-   List<String> lista = new ArrayList<>();
-   lista.add("Elemento");
-
-   List<String> listaEnlazada = new LinkedList<>();
-   listaEnlazada.add("Elemento");
-   ```
-
-2. **Manejo de excepciones:**
-
-   ```java
-   try {
-       int resultado = 10 / 0;
-   } catch (ArithmeticException e) {
-       System.out.println("División por cero");
-   }
-   ```
-
-3. **Uso de lambdas en Java 8:**
-
-   ```java
-   List<Integer> lista = Arrays.asList(1, 2, 3, 4);
-   lista.forEach(n -> System.out.println(n));
-   ```
-
-4. **Crear una clase inmutable:**
-
-   ```java
-   public final class Persona {
-       private final String nombre;
-
-       public Persona(String nombre) {
-           this.nombre = nombre;
-       }
-
-       public String getNombre() {
-           return nombre;
-       }
-   }
-   ```
-
-5. **Implementación de un hilo en Java:**
-
-   ```java
-   public class MiHilo extends Thread {
-       public void run() {
-           System.out.println("Hilo corriendo");
-       }
-   }
-
-   MiHilo hilo = new MiHilo();
-   hilo.start();
-   ```
-
----
 
 ### **SQL**
 #### Preguntas:
