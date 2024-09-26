@@ -1,4 +1,4 @@
-#Preguntas/Respuestas Intrevista Python
+### **Preguntas/Respuestas Intrevista Python**
 1. **Python Basics:**
    
    Q: Explain the difference between `list` and `tuple` in Python.
@@ -2804,7 +2804,7 @@ Aquí tienes un conjunto de preguntas y respuestas para una entrevista de trabaj
      lista = [1, 2, 3]
      lista.append(4)
      ```
-**Como hacer consultas de forma eficiente en Django**
+### **Como hacer consultas de forma eficiente en Django**
 
 ### 1. **Usar `only()` y `defer()` para evitar cargar todos los campos**
 Si no necesitas todos los campos de un modelo, puedes utilizar `only()` para seleccionar solo los campos específicos o `defer()` para excluir algunos campos.
